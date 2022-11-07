@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      .content {
+        width: 50̀;
+        height:200px;
+        border: 1px solid #000000;
+        margin: 30px 20%;
+        border-radius: 15px;
+        text-align: center;
+        background-color:aquamarine;
+      }
+      button {margin-top:10px;}
+    </style>
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <div class="content">
+      <h1>1 Tính lương.</h1>
+      <input
+        id="SalaryPerDay"
+        type="number"
+        placeholder="Nhập lương 1 ngày"
+        value=""
+      />
+      <input id="WorkingDay" type="number" placeholder="Số ngày làm" value="" />
+      <br>
+      <button onclick="Salary()">Tính lương</button>
+      <div id="Ketqua">Kết quả</div>
+    </div>
+    <!-- Bài 2 -->
+    <div class="content">
+      <h1>2 Tính giá trị trung bình.</h1>
+      <input id="number1" type="number" placeholder="Nhập số thứ 1" value="" />
+      <input id="number2" type="number" placeholder="Nhập số thứ 2" value="" />
+      <input id="number3" type="number" placeholder="Nhập số thứ 3" value="" />
+      <input id="number4" type="number" placeholder="Nhập số thứ 4" value="" />
+      <input id="number5" type="number" placeholder="Nhập số thứ 5" value="" />
+      <br>
+      <button onclick="Average()">Tính giá trị trung bình</button>
+      <div id="Ketqua2">Kết quả</div>
+    </div>
+    <!-- bài 3 -->
+    <div class="content">
+      <h1>3. Qui đổi tiền</h1>
+      <input
+        id="QuantityUsd"
+        type="number"
+        placeholder="Nhập số tiền"
+        value=""
+      />
+      <br>
+      <button onclick="VndMoney()">Quy đổi Tiền</button>
+      <div id="Ketqua3">Số tiền sau qui đổi</div>
+    </div>
+    <!-- Bài 4 -->
+    <div class="content">
+      <h1>4. Tính diện tích, chu vi hình chữ nhật</h1>
+      <input id="width" type="number" placeholder="Nhập chiều dài" value="" />
+      <input id="height" type="number" placeholder="Nhập chiều rộng" value="" />
+      <br>
+      <button onclick="CVDT()">Tính</button>
+      <div id="Ketqua4">Kết quả</div>
+    </div>
+    <!-- bài 5 -->
+    <div class="content">
+      <h1>5. Tổng 2 kí số</h1>
+      <input id="n" type="number" placeholder="Nhập số có 2 chữ số" value="" />
+      <br>
+      <button onclick="sum2number()">Tính</button>
+      <div id="Ketqua5">Kết quả</div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
